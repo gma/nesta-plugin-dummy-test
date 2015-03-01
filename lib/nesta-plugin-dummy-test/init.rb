@@ -3,6 +3,9 @@ module Nesta
     module Dummy::Test
       module Helpers
         # If your plugin needs any helper methods, add them here...
+        def dummy
+          'dummy test works!'
+        end
       end
     end
   end
