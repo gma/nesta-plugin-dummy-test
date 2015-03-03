@@ -47,9 +47,9 @@ end
 
 task 'release:source_control_push' do
   unless already_tagged?
-    `git tag -a -m 'Version #{version}' v#{version}`
-    `git push`
-    `git push --tags`
+    system "git tag -a -m 'Version #{version}' v#{version}"
+    system 'git push'
+    system 'git push --tags'
   end
 end
 
